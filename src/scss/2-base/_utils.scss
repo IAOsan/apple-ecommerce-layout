@@ -1,0 +1,18 @@
+.u-centered {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+.u-pos-rel {
+   position: relative;
+}
+.u-flex-center {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.u-hidde-item {
+   opacity: 0;
+   visibility: hidden;
+}

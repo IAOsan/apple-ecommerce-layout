@@ -1,0 +1,17 @@
+.section3__watches.u-flex-center
+   .section3__bands.u-flex-center
+      each band,index in watchbands
+         img.section3__bandImg(src=`assets/images/watches/${band}`, alt=`Watch band ${index + 1}`)
+   .section3__cases.u-flex-center
+      each casee,index in watchcases
+         img.section3__caseImg(src=`assets/images/watches/${casee}`, alt=`Watch case ${index + 1}`)
+a.section3__control.watch-top-control(href="#") 
+   i.fas.fa-angle-up.watch-top-control
+a.section3__control.watch-right-control(href="#") 
+   i.fas.fa-angle-right.watch-right-control
+a.section3__control.watch-bottom-control(href="#") 
+   i.fas.fa-angle-down.watch-bottom-control
+a.section3__control.watch-left-control(href="#") 
+   i.fas.fa-angle-left.watch-left-control
+button.btn.section3__btn(type="submit") Buy Now
+

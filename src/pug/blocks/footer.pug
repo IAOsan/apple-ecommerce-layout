@@ -1,0 +1,7 @@
+footer.footer
+   .footer__icons.u-centered
+      each link in footerIcons
+         a.footer_link(href=`#${link.id}`) 
+            img.footer__icon(src=`assets/images/icons/${link.img}.png`, alt=link.img)
+   p.copyright Copyright &copy; Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, autem!
+

@@ -1,0 +1,48 @@
+.nav {
+   position: absolute;
+   top: 3rem;
+   // right: 10%;
+   z-index: 10;
+   width: 100%;
+   justify-content: space-between;
+   padding: 0 10%;
+   @include respond(576) {
+      padding: 0 0;
+      flex-wrap: wrap;
+      align-content: space-between;
+   }
+   &__icon {
+      font-size: 5rem;
+      vertical-align: bottom;
+      @include respond(576) {
+         order: 2;
+         flex: 0 0 100%;
+         text-align: center;
+      }
+   }
+   &__list {
+      list-style-type: none;
+      order: 1;
+      @include respond(576) {
+         flex: 0 0 100%;
+         text-align: center;
+         order: 1;
+      }
+   }
+   &__link {
+      font-size: 2rem;
+      font-weight: 500;
+      margin: 0 3rem;
+      color: var(--c-black);
+      display: inline-block;
+      text-decoration: none;
+      text-transform: capitalize;
+      transition: var(--transition);
+      @include respond(576) {
+         margin: 0 1.5rem;
+      }
+      &:hover {
+         transform: scale(1.5);
+      }
+   }
+}

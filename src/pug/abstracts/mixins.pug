@@ -1,0 +1,21 @@
+mixin cube 
+   .cube    
+      .cube__frontSide
+         img.cube__img(srcset="assets/images/iphone-sm.png 325w, assets/images/iphone.png 502w" sizes="(max-width: 56.25em) 15vw, (max-width: 37.5em) 41vw, 225px" src="assets/images/iphone.png", alt="Iphone")
+      .cube__backSide
+         i.fab.fa-apple.cube__icon
+   .cube__controls 
+      a.cube__control(href="#") 
+         i.fas.fa-arrow-up.top-x-control
+      a.cube__control(href="#") 
+         i.fas.fa-arrow-down.bottom-x-control
+      a.cube__control(href="#") 
+         i.fas.fa-arrow-left.left-y-control
+      a.cube__control(href="#") 
+         i.fas.fa-arrow-right.right-y-control
+      a.cube__control(href="#") 
+         i.fas.fa-arrow-down.top-z-control
+      a.cube__control(href="#") 
+         i.fas.fa-arrow-up.bottom-z-control
+
+

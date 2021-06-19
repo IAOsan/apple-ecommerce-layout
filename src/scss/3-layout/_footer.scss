@@ -1,0 +1,38 @@
+.footer {
+   height: 40vh;
+   width: 100%;
+   text-align: center;
+   position: relative;
+   @include respond(768) {
+      height: 30vh;
+   }
+   &__icons {
+      width: 100%;
+   }
+   &__icon {
+      margin: 0 5rem;
+      display: inline-block;
+      width: 10rem;
+      @include respond(768) {
+         margin: 0 4rem;
+         width: 8rem;
+      }
+      @include respond(576) {
+         margin: 0 1.5rem;
+         width: 10vw;
+      }
+   }
+}
+.copyright {
+   width: 100%;
+   position: absolute;
+   bottom: 5rem;
+   font-size: 1.5rem;
+   letter-spacing: 0.1rem;
+   @include respond(768) {
+      bottom: 4rem;
+   }
+   @include respond(576) {
+      bottom: 2rem;
+   }
+}
